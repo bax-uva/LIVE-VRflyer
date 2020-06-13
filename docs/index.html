@@ -16,46 +16,61 @@
     <!-- scene -->
     <a-scene>
       <!-- camera -->
-      <a-entity camera look-controls position="0.3 1.5 -2"></a-entity>
+      <a-entity
+        camera
+        look-controls
+        position="-0.37 1.5 -7"
+        rotation="-138.6 -49.4 0"
+      ></a-entity>
 
       <!-- sky -->
-      <a-sky material="src: url(./assets/green-bg.jpg)"></a-sky>
+      <a-sky material="src: url(./assets/black-bg.jpg)"></a-sky>
 
       <!-- elements -->
 
       <!-- text -->
       <a-entity
         id="live"
-        position="8.8 2.1 -20.4"
-        rotation="-39 6.1 15.7"
-        text="anchor: center; width: 5; color: white; value: bax uva Live"
+        position="9.6 1.8 -19"
+        rotation="-27.9 15.5 -3.3"
+        text="anchor: center; width: 5; color: white; value: bax uva LIVE; letterSpacing: -3.3"
         font="Roboto"
         scale="6.5 8.1 7.5"
       ></a-entity>
       <a-entity
         id="junho"
-        position="8.8 2.1 -20.4"
-        rotation="-39 6.1 15.7"
-        text="anchor: center; width: 5; color: white; value: 18 e 25 junho 19:30hs CET"
+        position="9.2 -2.8 -22.4"
+        rotation="23 8.6 17.9"
+        text="anchor: center; width: 5; color: white; value: 18 & 25 JUN 2020 19:30hs CEST; letterSpacing: -1.6"
         font="Roboto"
-        scale="6.5 8.1 7.5"
+        scale="7.1 11 7.5"
       ></a-entity>
       <a-entity
         id="julho"
-        position="8.8 2.1 -20.4"
-        rotation="-39 6.1 15.7"
-        text="anchor: center; width: 5; color: white; value: 1 e 8 de julho 14:30hs CET"
+        position="14.4 -4.5 -25"
+        rotation="-62 -1.6 21.2"
+        text="anchor: center; width: 5; color: white; value: 4 & 11 JUL 2020 22:30hs CEST; letterSpacing: -0.9"
+        font="Roboto"
+        scale="8.4 9.6 8.9"
+      ></a-entity>
+      <a-entity
+        id="address"
+        position="7.5 -8.7 -24.1"
+        rotation="-2.9 37.4 -7.1"
+        text="anchor: center; width: 5; color: white; value: on twitch.tv/baxuva; letterSpacing: -0.75"
         font="Roboto"
         scale="6.5 8.1 7.5"
       ></a-entity>
 
-      <!-- black transparent balls -->
+      <!-- cylinder -->
 
       <a-entity
-        class="black"
-        geometry="primitive: sphere; radius: 2"
-        material="color: black; transparent: true; opacity: 0.8"
-        position="0.7 2.2 -17.2"
+        class="red"
+        geometry="primitive: cylinder; radius: 2"
+        material="src: url(./assets/rabisco.png); transparent:true;"
+        position="0.85 -1.8 -17.2"
+        rotation="6.3 89.62 -107.9"
+        scale="1 17.2 1"
       ></a-entity>
     </a-scene>
   </body>
